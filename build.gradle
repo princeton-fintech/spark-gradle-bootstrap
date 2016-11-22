@@ -1,0 +1,20 @@
+group 'edu.princeton.fintech'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.scala-lang:scala-compiler:$scalaVersion"
+    compile "org.apache.spark:spark-core_2.10:$sparkVersion"
+    compile "org.apache.spark:spark-sql_2.10:$sparkVersion"
+    compile "org.apache.spark:spark-mllib_2.10:$sparkVersion"
+    compile "org.apache.spark:spark-graphx_2.10:$sparkVersion"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

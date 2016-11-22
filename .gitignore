@@ -23,8 +23,9 @@ project/plugins/project/
 Session.vim
 .netrwhist
 *~
-### Java template
-*.class
+
+.gradle/
+build/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
